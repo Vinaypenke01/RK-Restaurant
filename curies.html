@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img
+                src="./images/logo-dedelicieux-vertical.png"
+                class="me-2 bg-light"
+                id="logo"
+                height="70"
+                alt="MDB Logo - Transparent"
+                loading="lazy"
+                
+                />
+            </a>
+            <a href="#" class="text-end">download menu</a>
+        </div>
+    </nav>
+
+    <!-- Menu Links -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 bg-light" id="nav2">
+        <a href="index.html"    class="ps-1 pe-1">soups</a>
+        <a href="starters.html" class="ps-1 pe-1">starters</a>
+        <a href="main_course.html"     class="ps-1 pe-1">main course</a>
+        <a href="curies.html"  class="ps-1 pe-1 border rounded border-primary text-danger">curies</a>
+        <a href="deserts.html"  class="ps-1 pe-1">deserts</a>
+        <a href="#" class="ps-1 pe-1">about us</a>
+    </nav>
+    
+
+    <!-- carousel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/curies/mutton_curry.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>hai</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/curies/shahi-paneer.jpg" class="d-block w-100 " alt="..." style="height: 500px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/curies/chepa_pulusu.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <nav class="d-flex flex-wrap justify-content-center py-3 mt-5 bg-light" id="nav3">
+        <a href="#nonveg" onclick="showCategory('nonveg')" class="ps-3 pe-3 badge bg-primary text-wrap" style="color: white;">non veg </a>
+        <a href="#veg"  onclick="showCategory('veg')" class="ps-3 pe-3 badge bg-success text-wrap" style="color: white;">vegetable</a>
+    </nav>
+
+    <!-- currries (non-veg) -->
+    <section id="nonveg" class="container mt-5">
+        <div class="row g-4">
+            <!-- starter Item:1 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 card-container align-items-center" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/mutton_curry.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">mutton-curry</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">229/-</span></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Starter Item:2 -->
+            <div class="col-md-6 fade-in-right">
+                <div class="d-flex border rounded p-3 justify-content-between align-items-center card-container" style="background: linear-gradient(45deg, #f7e7d9, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="me-4 text-start">
+                        <h4 style="color: #d9534f; font-weight: bold; margin-bottom: 10px;" class="text-start">chepa_pulusu</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">209/-</span></h5>
+                    </div>
+                    <img src="./images/curies/chepa_pulusu.jpg" height="170px" width="200px" alt="Chicken Tikka" style="border-radius: 10px; object-fit: cover; transition: transform 0.3s ease;">
+                </div>
+            </div>
+
+            <!-- starter Item:3 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 card-container align-items-center" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/kodi_kura.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">kodi-kura</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">189/-</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- starter Item:4 -->
+            <div class="col-md-6 fade-in-right">
+                <div class="d-flex border rounded p-3 justify-content-between align-items-center card-container" style="background: linear-gradient(45deg, #f7e7d9, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="me-4 text-start">
+                        <h4 style="color: #d9534f; font-weight: bold; margin-bottom: 10px;" class="text-start">nihar</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">199/-</span></h5>
+                    </div>
+                    <img src="./images/curies/nihar.jpg" height="170px" width="200px" alt="Chicken Tikka" style="border-radius: 10px; object-fit: cover; transition: transform 0.3s ease;">
+                </div>
+            </div>
+
+            <!-- starter Item:5 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 card-container align-items-center" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/prawn_pulusu.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">prawn-pulusu</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">299/-</span></h5>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- curies (veg) -->
+    <section id="veg" class="container mt-5">
+        <div class="row g-4">
+            <!-- starter Item:1 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 align-items-center card-container" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/shahi-paneer.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">shahi-paneer</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">189/-</span></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Starter Item:2 -->
+            <div class="col-md-6 fade-in-right">
+                <div class="d-flex border rounded p-3 justify-content-between align-items-center card-container" style="background: linear-gradient(45deg, #f7e7d9, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="me-4 text-start">
+                        <h4 style="color: #d9534f; font-weight: bold; margin-bottom: 10px;" class="text-start">mushroom-curry</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">199/-</span></h5>
+                    </div>
+                    <img src="./images/curies/mushroom-curry.jpg" height="170px" width="200px" alt="Chicken Tikka" style="border-radius: 10px; object-fit: cover; transition: transform 0.3s ease;">
+                </div>
+            </div>
+
+            <!-- starter Item:3 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 card-container align-items-center" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/Palak-Paneer.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">Palak-Paneer</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">209/-</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- starter Item:4 -->
+            <div class="col-md-6 fade-in-right">
+                <div class="d-flex border rounded p-3  align-items-center card-container" style="background: linear-gradient(45deg, #f7e7d9, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="me-4 text-start">
+                        <h4 style="color: #d9534f; font-weight: bold; margin-bottom: 10px;" class="text-start">gongura-chutney</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">139/-</span></h5>
+                    </div>
+                    <img src="./images/curies/gongura-chutney.jpg" height="170px" width="200px" alt="Chicken Tikka" style="border-radius: 10px; object-fit: cover; transition: transform 0.3s ease;">
+                </div>
+            </div>
+
+            <!-- starter Item:5 -->
+            <div class="col-md-6 fade-in-left">
+                <div class="d-flex border rounded p-3 align-items-center card-container" style="background: linear-gradient(45deg, #ffe5b4, #fff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <img src="./images/curies/tomato_dal.jpg" height="170px" width="200px" alt="Paneer Tikka" style="border-radius: 10px; object-fit: cover;">
+                    <div class="ms-4">
+                        <h4 style="color: #d9534f; font-weight: bold;">tomato_dal</h4>
+                        <h5 style="color: #555;">Price: <span style="font-size: 1.2rem; color: #5cb85c;">159/-</span></h5>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RK Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
